@@ -39,30 +39,32 @@
           <div class="logo">
                 <figure>
                       <a href="index.html">
-                            <img src="resources/admin/images/hs.jpg" alt="" width="130">
-                         &nbsp; <h4> <b> JIVANDAN<b></h4>
+                            <img src="resources/admin/images/hs1.png" alt="" width="60">
+                         &nbsp; <h4 style="color: rgb(96, 185, 96)"> <b> Health Care Center<b></h4>
                       </a>
                 </figure>
           </div>
           <div class="right-side">
                 <ul class="contact-info">
                       <li class="item">
-                            <div class="icon-box">
-                                  <i class="fa fa-envelope-o"></i>
+                            <div class="logo">
+                              <img src="resources/admin/images/email.png" alt="" width="40">
+                               <!--   <i class="fa fa-envelope-o"></i>-->
                             </div>
-                            <strong>Email</strong>
+                           <!-- <strong>Email</strong>-->
                             <br>
                             <a href="https://mail.google.com">
-                                  <span>jivandan@gmail.com</span>
+                                  <span>healthcare@gmail.com</span>
                             </a>
                       </li>
                       <li class="item">
-                            <div class="icon-box">
-                                  <i class="fa fa-phone"></i>
+                            <div class="logo">
+                                 <!-- <i class="fa fa-phone"></i> -->
+                                 <img src="resources/admin/images/callnow.png" alt="" width="40">
                             </div>
-                            <strong>Call Now</strong>
+                           <!-- <strong>Call Now</strong>-->
                             <br>
-                            <span>+977 986 9416 100</span>
+                            <span>9863748333</span>
                       </li>
                 </ul>
               <!--  <div class="link-btn">

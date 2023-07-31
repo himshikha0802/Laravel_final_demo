@@ -16,7 +16,7 @@ class LoginController extends Controller
         $credential=['email'=>$request->get('email'),'password'=>$request->get('password')];
         if (Auth::attempt($credential)){
             $request->session()->regenerate();
-            return redirect()->intended('dashboard');
+            return redirect()->intended('admin/dashboard');
         }
         return back()->withErrors([
             'email'=>'The provided credentials do not match our records.',
@@ -26,7 +26,6 @@ class LoginController extends Controller
         if (Auth::check()){
             Auth::logout();
         }
-        return redirect()->route('auth.login');
+        return redirect()->route('auth.home');
     }
 }
-

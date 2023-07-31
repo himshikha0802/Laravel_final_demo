@@ -16,6 +16,9 @@ class MainController extends Controller
     }
     public function homeForm()
     {
+      if(auth()->check()){
+         return redirect()->route('dashboard');
+      }
        return view('admin.auth.home');
     }
     public function aboutForm()

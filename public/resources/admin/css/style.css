@@ -13,7 +13,7 @@ body {
 
 p {
   font-family: "Source Sans Pro", sans-serif;
-  color: #848484;
+  color: #949292;
   font-size: 16px;
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 /*=== MEDIA QUERY ===*/
 body {
   font-size: 15px;
-  color: #777777;
+  color: #999191;
   line-height: 1.8em;
   font-weight: 400;
   background: #ffffff;
@@ -143,8 +143,8 @@ li {
   color: #ffffff;
   line-height: 27px;
   padding: 8px 36px;
-  background: #48bdc5;
-  border: 1px solid #48bdc5;
+  background: #69e35e;
+  border: 1px solid #24a150;
   display: inline-block;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
@@ -460,7 +460,7 @@ li {
 
 .navbar {
   margin-bottom: 0;
-  background: #48bdc5;
+  background: #2bf664;
   border: none;
   border-radius: 0;
 }
@@ -512,7 +512,7 @@ li {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   display: block;
-  background: #48bdc5;
+  background: #32e562;
   color: #fff;
   padding: 20px 30px;
   transition: all .3s ease;
@@ -537,7 +537,7 @@ li {
 }
 
 .accordion-section .accordion-holder .panel-default .panel-heading h4 a.collapsed:hover {
-  color: #48bdc5;
+  color: #80df5b;
 }
 
 .accordion-section .accordion-holder .panel-default .panel-body {
@@ -695,7 +695,7 @@ li {
 }
 
 .cta .cta-block .emmergency {
-  background: #48bdc5;
+  background: #46b94a;
 }
 
 .cta .cta-block .emmergency a {
@@ -708,7 +708,7 @@ li {
 }
 
 .cta .cta-block .top-doctor {
-  background: #5bc4cb;
+  background: #45de4a;
 }
 
 .cta .cta-block .top-doctor .btn-main {
@@ -725,7 +725,7 @@ li {
 }
 
 .cta .cta-block .working-time {
-  background: #6fcbd1;
+  background:#46b94a;
 }
 
 .cta .cta-block .working-time ul {
@@ -985,21 +985,21 @@ li {
   font-weight: 600;
   color: #4d4d4d;
   font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid #48bdc5;
+  border: 2px solid #6bf480;
   border-radius: 0;
   transition: all .3s ease;
 }
 
 .tabs .nav-tabs li a:hover {
-  background: #48bdc5;
+  background: #6bf480;
   color: #fff;
-  border: 2px solid #48bdc5;
+  border: 2px solid #6bf480;
 }
 
 .tabs .nav-tabs li.active a {
   color: #fff;
-  background: #48bdc5;
-  border: 2px solid #48bdc5;
+  background: #6bf480;
+  border: 2px solid #6bf480;
 }
 
 .tab-content {
@@ -1112,7 +1112,7 @@ li {
 
 .service-section .items-container .slick-prev:before, .service-section .items-container .slick-next:before {
   font-size: 25px;
-  color: #48bdc5;
+  color:#2bc33d;
 }
 
 .service-section .items-container .item {
@@ -1186,7 +1186,7 @@ li {
 .service-two .left-side .section-title h3:after {
   position: absolute;
   content: '';
-  background: #48bdc5;
+  background: #43ca22;
   bottom: 0px;
   left: 0px;
   height: 1px;
@@ -1732,7 +1732,7 @@ li {
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(72, 189, 197, 0.7);
+  background: rgba(130, 234, 131, 0.7);
 }
 
 .testimonial-section .section-title h3 {
@@ -2723,7 +2723,7 @@ li {
 
 .video-gallery .video-gallery-item h3 {
   text-align: center;
-  color: #48bdc5;
+  color: #21a51d;
   margin-top: 15px;
   text-transform: capitalize;
   font-family: "Source Sans Pro", sans-serif;
@@ -2745,7 +2745,7 @@ li {
   height: 100%;
   content: '';
   z-index: -1;
-  background: linear-gradient(to right, rgba(122, 102, 203, 0.8) 0%, rgba(72, 189, 197, 0.74) 100%);
+  background: linear-gradient(to right, rgba(122, 102, 203, 0.8) 0%, rgba(37, 165, 67, 0.74) 100%);
 }
 
 .work-skill .pie-value {
@@ -2831,7 +2831,7 @@ li {
 
 .page-title .title-text .title-menu li {
   position: relative;
-  color: #48bdc5;
+  color: #2bc33d;
   font-size: 17px;
   display: inline-block;
   line-height: 30px;
@@ -2846,7 +2846,7 @@ li {
 }
 
 .page-title .title-text .title-menu li a:hover {
-  color: #48bdc5;
+  color:  #2bc33d;
   transition: all 500ms ease;
 }
 
@@ -2885,7 +2885,7 @@ li {
 
 .styled-pagination ul li a:hover, .styled-pagination ul li a.active {
   color: #ffffff;
-  background: #48bdc5;
+  background: #2bc33d;
   transition: all 500ms ease;
 }
 
@@ -2893,7 +2893,7 @@ li {
   position: relative;
   background-size: cover;
   z-index: 1;
-  background: #132646;
+  background: #146f17;
 }
 
 .footer-main .footer-top {
@@ -3080,7 +3080,7 @@ li {
 
 .footer-bottom {
   padding: 24px 0px;
-  background: #0d1a2f;
+  background: #024511;
 }
 
 .footer-bottom .copyright-text {

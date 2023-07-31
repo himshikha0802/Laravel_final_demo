@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\Auth\AppointmentController;
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
+use App\Models\appointment;
 use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Service;
@@ -36,46 +37,47 @@ Route::get('/serv', function () {
     return view('admin.auth.service', compact('services'));
 })->name('serv');
 
-Route::get('/apps', function () {
-    return view('admin.appointment.index');
-});
-Route::get('/', function () {
-    return view('admin.auth.home');
-});
+// Route::get('/apps', function () {
+//     return view('admin.appointment.index');
+// });
+// Route::get('/', function () {
+//     return view('admin.auth.home');
+// });
 
-Auth::routes();
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/dashboard', function () {
-        if (auth()->check()) {
-            if (auth()->user()->usertype == "isAdmin") {
-                $totalDoctor =  Doctor::count();
-                $totalPatient = Patient::count();
-                $totalStaff  = staff::count();
-                $totalRegister  = User::count();
-                $totalService  = User::count();
-                return view('admin.dashboard.index', compact('totalDoctor', 'totalPatient', 'totalStaff', 'totalRegister', 'totalService'));
-            } else {
-                return view('admin.dashboard.index1');
-            }
-        }
-    })->name('dashboard');
-});
-Route::get('/layouts1', function () {
-    $totalDoctor =  Doctor::count();
-    $totalPatient = Patient::count();
-    $totalStaff  = staff::count();
-    $totalRegister  = User::count();
-    $totalspecialist = Specialist::count();
-    $totalService = Service::count();
-    return view('layouts.admin.layout', compact('totalDoctor', 'totalPatient', 'totalStaff', 'totalRegister', 'totalspecialist', 'totalService'));
-});
+// Auth::routes();
+// Route::group(['middleware' => ['auth']], function () {
+//     Route::get('/dashboard', function () {
+//         if (auth()->check()) {
+//             if (auth()->user()->usertype == "admin") {
+//                 $totalDoctor =  Doctor::count();
+//                 $totalPatient = Patient::count();
+//                 $totalStaff  = staff::count();
+//                 $totalRegister  = User::count();
+//                 $totalService  = User::count();
+//                 return view('admin.dashboard.index', compact('totalDoctor', 'totalPatient', 'totalStaff', 'totalRegister', 'totalService'));
+//             } else {
+//                 $data = appointment::all();
+//                 return view('admin.dashboard.index1', compact('data'));
+//             }
+//         }
+//     })->name('dashboard');
+// });
+// Route::get('/layouts1', function () {
+//     $totalDoctor =  Doctor::count();
+//     $totalPatient = Patient::count();
+//     $totalStaff  = staff::count();
+//     $totalRegister  = User::count();
+//     $totalspecialist = Specialist::count();
+//     $totalService = Service::count();
+//     return view('layouts.admin.layout', compact('totalDoctor', 'totalPatient', 'totalStaff', 'totalRegister', 'totalspecialist', 'totalService'));
+// });
 
-Route::get('/layouts1', function () {
-    $doctors = Doctor::get();
-    return view('admin.auth.team', compact('doctors'));
-    $service = Service::get();
-    return view('admin.auth.service', compact('service'));
-});
+// Route::get('/layouts1', function () {
+//     $doctors = Doctor::get();
+//     return view('admin.auth.team', compact('doctors'));
+//     $service = Service::get();
+//     return view('admin.auth.service', compact('service'));
+// });
 // Route::get('/service',function(){
 //     $service = Service::get();
 //     return view('layouts1.admin.service',compact('service'));
@@ -88,18 +90,17 @@ Route::get('/about', [App\Http\Controllers\admin\Auth\MainController::class, 'ab
 Route::get('/appointment', [App\Http\Controllers\admin\Auth\MainController::class, 'appointmentForm'])->name('auth.appointment');
 Route::get('/gallery', [App\Http\Controllers\admin\Auth\MainController::class, 'galleryForm'])->name('auth.gallery');
 //Route::get('/service', [App\Http\Controllers\admin\Auth\MainController::class,'serviceForm'])->name('auth.service');
-Route::get('/home', [App\Http\Controllers\admin\Auth\MainController::class, 'homeForm'])->name('auth.home');
+Route::get('/', [App\Http\Controllers\admin\Auth\MainController::class, 'homeForm'])->name('auth.home');
 
 
 Route::get('/register', [App\Http\Controllers\admin\Auth\RegisterController::class, 'registerForm'])->name('auth.register');
 Route::post('/register', [App\Http\Controllers\admin\Auth\RegisterController::class, 'registerUser'])->name('auth.register-user');
 Route::get('/login', [App\Http\Controllers\admin\Auth\RegisterController::class, 'loginForm'])->name('auth.login');
 Route::post('/login', [App\Http\Controllers\admin\Auth\LoginController::class, 'loginUser'])->name('auth.login-user');
-Route::get('/logout', [App\Http\Controllers\admin\Auth\LoginController::class, 'Logout'])->name('auth.logout');
 //Route::get('/logout',function(){
 //  return auth()->logout();
 //})->name('auth.logout')
-Route::group(['middleware' => "auth"], function ($router) {
+Route::group(['middleware' => "auth"], function () {
     Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
         Route::get('/dashboard', [App\Http\Controllers\admin\Dashboard\DashboardController::class, 'index'])->name('dashboard');
 
@@ -151,5 +152,7 @@ Route::group(['middleware' => "auth"], function ($router) {
         Route::post('/service/{id}/update', [App\Http\Controllers\admin\Service\ServiceController::class, 'update'])->name('service.update');
     });
 
-    Route::get('/test', [DashboardController::class, 'test']);
+    Route::get('/dashboard', [DashboardController::class, 'index1']);
+    Route::get('/logout', [App\Http\Controllers\admin\Auth\LoginController::class, 'Logout'])->name('auth.logout');
+
 });

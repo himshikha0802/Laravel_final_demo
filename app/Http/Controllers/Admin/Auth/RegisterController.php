@@ -15,14 +15,16 @@ class RegisterController extends Controller
     //open forms
     public function registerForm()
     {
-        if (auth()->check())
+        if (auth()->check()){
             return redirect()->route('dashboard');
+        }
         return view('admin.auth.register');
     }
     public function loginForm()
     {
-        if (auth()->check())
+        if (auth()->check()){
             return redirect()->route('dashboard');
+        }
         return view('admin.auth.login');
     }
 

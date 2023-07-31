@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Staff;
+use App\Models\appointment;
 use App\Models\User;
 use App\Models\specialist;
 use App\Models\Service;
@@ -24,8 +25,9 @@ class DashboardController extends Controller
         $totalService = Service::count();
         return view('admin.dashboard.index', compact('totalDoctor', 'totalPatient', 'totalRegister', 'totalStaff', 'totalspecialist', 'totalService'));
     }
-    public function test()
+    public function index1()
     {
-        echo "test this";
+        $data = appointment::all();
+       return view('admin/dashboard.index1', compact('data'));
     }
 }

@@ -11,7 +11,7 @@
                     <!-- Slide Content Start -->
                     <div class="content style text-center">
                         <h2 class="text-white text-bold mb-2">Our Best Surgeons</h2>
-                        <p class="tag-text mb-5">we have best surgerons for your health checkup,if you dont get as you expected,<br> its our responsibilty..Please visit us.... <br>
+                        <p class="tag-text mb-5">we have best surgerons for your healths checkup,if you dont get as you expected,<br> its our responsibilty..Please visit us.... <br>
 </p>
 
                     </div>

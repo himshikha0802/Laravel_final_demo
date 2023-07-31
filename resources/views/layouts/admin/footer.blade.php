@@ -9,7 +9,7 @@
                 <figure>
                   <a href="index.html">
 
-                    JIVANDAN
+                    Health Care Center
                   </a>
                 </figure>
               </div>
@@ -17,12 +17,12 @@
               <ul class="location-link">
                 <li class="item">
                   <i class="fa fa-map-marker"></i>
-                  <p>Chabel,Kathmnadu Nepal</p>
+                  <p>Sitapaila,Kathmandu Nepal</p>
                 </li>
                 <li class="item">
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                   <a href="#">
-                    <p>Support@jivandan.com</p>
+                    <p>Support@healthcare.com</p>
                   </a>
                 </li>
                 <li class="item">
@@ -95,7 +95,7 @@
       <div class="container clearfix">
         <div class="copyright-text">
           <p>&copy; Copyright 2018. All Rights Reserved by
-            <a href="index.html">JIVANDAN</a>
+            <a href="index.html">Health Care Center</a>
           </p>
         </div>
 

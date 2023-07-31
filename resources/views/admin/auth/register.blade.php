@@ -2,11 +2,11 @@
 @extends('layouts.auth.layout')
 @section('content' )
 
-<div class="register-box-body" style="background-color:#a5c9d1;border-color:black;border-style:ridge;border-pixel:10px;">
+<div class="register-box-body" style="background-color:#80f06c;border-color:black;border-style:ridge;border-pixel:10px;">
 
     <div class="image-box">
         <figure>
-            <img src="resources/admin/images/hlo/sign.webp" height="250px" width="305px" style="position: center;" alt="">
+            <img src="resources/admin/images/admin.jpg" height="250px" width="305px" style="position: center;" alt="">
         </figure>
     </div>
 
@@ -58,11 +58,11 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+          <button type="submit" class="btn btn-success btn-block btn-flat">Register</button>
         </div>
 
         <div class="col-xs-3" buttontype="button">
-          <a class="btn btn-primary" href="{{route('auth.login')}}" style="color:white;" class="text-center" class="btn btn-primary btn-block btn-flat">Login </a>
+          <a class="btn btn-success" href="{{route('auth.login')}}" style="color:white;" class="text-center" class="btn btn-success btn-block btn-flat">Login </a>
         </div>
 
         <!-- /.col -->

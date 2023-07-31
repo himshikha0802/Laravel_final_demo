@@ -1,6 +1,6 @@
 @extends('layouts.auth.layout')
 @section('content')
-<div class="login-box-body" style="background-color:#a5c9d1;border-style:ridge;border-color:black;border-pixel:10px;">
+<div class="login-box-body" style="background-color:#80f06c;border-style:ridge;border-color:black;border-pixel:10px;">
 
     @if(auth()->check())
     {{-- <pre>{{auth()->user()->full_name}}</pre> --}}
@@ -9,7 +9,7 @@
       @csrf
       <div class="image-box">
         <figure>
-            <img src="resources/admin/images/hlo/sign.webp" height="250px" width="305px" style="position: center;" alt="">
+            <img src="resources/admin/images/admin.jpg" height="250px" width="305px" style="position: center;" alt="">
         </figure>
     </div>
 
@@ -30,10 +30,10 @@
 
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
         </div>
         <div class="col-xs-8">
-          <a class="btn btn-primary" href="{{route('auth.register')}}" cc >Register a new membership</a>
+          <a class="btn btn-success" href="{{route('auth.register')}}" cc >Register a new membership</a>
         </div>
 
         <!-- /.col -->

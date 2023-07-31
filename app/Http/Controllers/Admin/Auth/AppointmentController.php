@@ -59,11 +59,6 @@ class AppointmentController extends Controller
             $data->form_message=$request->get('form_message');
             $data->Status;
 
-
-
-
-
-
              if($data->save())
              {
                  return redirect()->route('auth.contact')->with(['msg'=>"User create successfully"]);
