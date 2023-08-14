@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href={{asset('resources/admin/dist/css/AdminLTE.min.css')}}>
+  <link rel="stylesheet" href={{asset('resources/admin/dist/css/AdminLTE.css')}}>
   <!-- iCheck -->
   <link rel="stylesheet" href={{asset('resources/admin/plugins/iCheck/square/blue.css')}}>
 
@@ -24,7 +25,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page login-custom-css">
 <div class="login-box">
   <div class="login-logo">
     <a href="../../index2.html">Please Sign Up!</a>

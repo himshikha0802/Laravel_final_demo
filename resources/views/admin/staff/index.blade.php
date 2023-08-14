@@ -5,14 +5,14 @@
       <div class="col-md-12">
 
         <!-- /.box -->
-        <a href="{{route('staff.create')}}" class="btn btn-primary">NEW STAFF:</a>
+        <a href="{{route('staff.create')}}" class="btn btn-success">NEW STAFF:</a>
         <div class="box"  >
-          <div class="box-header" style="height:50px;background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal">
+          <div class="box-header" style="height:50px;background-color:#9cf4a8;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
             <center><h3 class="box-title">STAFF RECORDS</h3></center>
 
           </div>
           <!-- /.box-header -->
-          <div class="box-body no-padding" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal" >
+          <div class="box-body no-padding" style="background-color:#c7edb5;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)" >
             <table class="table table-condensed" >
               <tr>
                 <th style="width: 10px"></th>
@@ -36,7 +36,7 @@
                     <td>{{$staff['post']}}</td>
 
 
-                    <td><a class="btn btn-info"  href="{{route('staff.edit',$staff['id'])}}">Edit</a></td>
+                    <td><a class="btn btn-success"  href="{{route('staff.edit',$staff['id'])}}">Edit</a></td>
                     <td><a class="btn btn-danger" href="{{route('staff.delete',$staff['id'])}}">Delete</a></td>
                   </tr>
               @endforeach

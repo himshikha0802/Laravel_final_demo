@@ -6,13 +6,13 @@
     </h1>
 
   </section>
-<section class="content" style="background-color:#70b8c9;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:">
 
-    <div class="row" style="background-color:#a5c9d1;border-color:teal"">
+    <div class="row" style="background-color: #a2cd75;border-color:rgb(5, 159, 11)">
       <!-- left column -->
       <div class="col-md-12">
         <!-- general form elements -->
-        <div class="box box-primary" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal"">
+        <div class="box box-primary" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
           <div class="box-header with-border">
             <h3 class="box-title">Specialist</h3>
           </div>
@@ -37,8 +37,8 @@
             </div>
             <!-- /.box-body -->
 
-            <div class="box-footer" style="background-color:#6bb7c9;">
-              <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="box-footer" style="background-color: #a2cd75;">
+              <button type="submit" class="btn btn-success">Submit</button>
             </div>
           </form>
         </div>

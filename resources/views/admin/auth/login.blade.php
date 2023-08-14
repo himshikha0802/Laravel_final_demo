@@ -33,7 +33,7 @@
           <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
         </div>
         <div class="col-xs-8">
-          <a class="btn btn-success" href="{{route('auth.register')}}" cc >Register a new membership</a>
+          <a href="{{route('auth.register')}}" cc >Register a new membership ?</a>
         </div>
 
         <!-- /.col -->

@@ -3,7 +3,7 @@
  * ----------
  */
 .skin-blue .main-header .navbar {
-  background-color: #3c8dbc;
+  background-color: #138e17;
 }
 .skin-blue .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -75,12 +75,12 @@
 .skin-blue .sidebar-menu > li:hover > a,
 .skin-blue .sidebar-menu > li.active > a {
   color: #ffffff;
-  background: #1e282c;
+  background: #10bc4c;
   border-left-color: #3c8dbc;
 }
 .skin-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
-  background: #2c3b41;
+  background: #2ab618;
 }
 .skin-blue .sidebar a {
   color: #b8c7ce;

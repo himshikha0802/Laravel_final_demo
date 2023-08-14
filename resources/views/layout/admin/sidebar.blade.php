@@ -1,6 +1,6 @@
-<aside class="main-sidebar" style="background-color: rgba(219, 86, 208, 0.062);">
+<aside class="main-sidebar" style="background-color:rgba(40, 93, 17, 0.829);">
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar" style="background-color: rgba(126, 107, 124, 0.829);">
+    <section class="sidebar" style="background-color: rgba(40, 93, 17, 0.829);">
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">

@@ -1,18 +1,18 @@
 @extends('layout.admin.layout')
 @section('content')
-<section class="content-header" style="background-color:#70b8c9;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content-header" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
     <h1>
         Patient
     </h1>
 
   </section>
-<section class="content" style="background-color:#69a8b6;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
 
-    <div class="row" style="background-color:#a5c9d1;border-color:teal"">
+    <div class="row" style="background-color: #a2cd75;border-color:rgb(5, 159, 11)">
       <!-- left column -->
       <div class="col-md-12">
         <!-- general form elements -->
-        <div class="box box-primary" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal"">
+        <div class="box box-primary" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
           <div class="box-header with-border">
             <h3 class="box-title">Patient</h3>
           </div>
@@ -45,8 +45,8 @@
                 <label for="exampleInputEmail1">Image</label>
                 <input type="file" class="form-control" id="exampleInputEmail1" name="image"  value="{{$patient['image']}}">
               </div>
-              <div class="box-footer" style="background-color:#6bb7c9;">
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="box-footer" style="background-color: #a2cd75;">
+                <button type="submit" class="btn btn-success">Submit</button>
               </div>
             </form>
           </div>

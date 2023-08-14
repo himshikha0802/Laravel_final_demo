@@ -5,14 +5,14 @@
       <div class="col-md-12">
 
         <!-- /.box -->
-        <a href="{{route('patient.create')}}" class="btn btn-primary">New Patient</a>
+        <a href="{{route('patient.create')}}" class="btn btn-success">New Patient</a>
         <div class="box">
-          <div class="box-header" style="height:50px;background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal">
+          <div class="box-header" style="height:50px;background-color:#9cf4a8;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
            <center> <h3 class="box-title">Patients</h3></center>
 
           </div>
           <!-- /.box-header -->
-          <div class="box-body no-padding" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal">
+          <div class="box-body no-padding" style="background-color:#c7edb5;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
             <table class="table table-condensed">
               <tr>
                 {{-- <th style="width: 10px">Specialist Id</th> --}}
@@ -35,7 +35,7 @@
                     <td>{{$patient['address']}}</td>
                     <td>{{$patient['age']}}</td>
 
-                    <td><a class="btn btn-primary" href="{{route('patient.edit',$patient['id'])}}">Edit</a></td>
+                    <td><a class="btn btn-success" href="{{route('patient.edit',$patient['id'])}}">Edit</a></td>
                     <td><a class="btn btn-danger" href="{{route('patient.delete',$patient['id'])}}">Delete</a></td>
                   </tr>
               @endforeach

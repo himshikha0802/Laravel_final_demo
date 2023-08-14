@@ -10,7 +10,7 @@
                 
                         <!-- /.box -->
                 
-                        <div class="box" style="background-color:#a0c9da;border-style:ridge;border-pixel:10px;border-color:teal">
+                        <div class="box" style="background-color:#58ea69;border-style:ridge;border-pixel:10px;border-color:rgb(105, 35, 197)">
                           <div class="box-header">
                             <h3 class="box-title">APPOINTMENTS:</h3>
                 

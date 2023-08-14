@@ -1,18 +1,18 @@
 @extends('layout.admin.layout')
 @section('content')
-<section class="content-header" style="background-color:#70b8c9;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content-header" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
     <h1>
       Doctor
     </h1>
 
   </section>
-<section class="content" style="background-color:#69a8b6;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
 
-    <div class="row" style="background-color:#a5c9d1;border-color:teal"">
+    <div class="row" style="background-color: #a2cd75;border-color:teal"">
       <!-- left column -->
       <div class="col-md-12" >
         <!-- general form elements -->
-        <div class="box box-primary" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal"">
+        <div class="box box-primary" style="background-color: #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)">
           <div class="box-header with-border">
             <h3 class="box-title">Doctor</h3>
           </div>
@@ -56,7 +56,7 @@
             </div>
             <!-- /.box-body -->
 
-            <div class="box-footer" style="background-color:#6bb7c9;">
+            <div class="box-footer" style="background-color: #a2cd75;">
               <button type="submit" class="btn btn-success" >Submit</button>
             </div>
             {{csrf_field()}}

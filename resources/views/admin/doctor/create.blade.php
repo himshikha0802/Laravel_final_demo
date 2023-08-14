@@ -2,19 +2,19 @@
 
 @section('content')
 
-<section class="content-header" style="background-color:#a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content-header" style="border-style:ridge;border-pixel:10px;">
     <h1>
       Doctor
     </h1>
 
   </section>
-<section class="content" style="background-color: #a5c9d1;border-style:ridge;border-pixel:10px;border-color:teal"">
+<section class="content" style="background-color:  #a2cd75;border-style:ridge;border-pixel:10px;border-color:rgb(5, 159, 11)"">
 
     <div class="row">
       <!-- left column -->
-      <div class="col-md-12" style="background-color:#a5c9d1;">
+      <div class="col-md-12" style="background-color:  #a2cd75">
         <!-- general form elements -->
-        <div class="box box-primary" style="background-color:#a5c9d1;">
+        <div class="box box-primary" style="background-color: #a2cd75;border-color:rgb(5, 159, 11)">
           <div class="box-header with-border">
             <h3 class="box-title"><center>Doctor</center></h3>
           </div>

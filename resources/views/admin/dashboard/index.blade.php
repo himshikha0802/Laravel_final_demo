@@ -1,8 +1,8 @@
 @extends('layout.admin.layout')
 @section("content")
-<section class="content-header" style="background-color: rgb(43, 144, 211);">
+<section class="content-header" style="background-color: rgb(55, 142, 62);">
 
-    <h1>
+    <h1 style="color: azure">
       Dashboard
 
     </h1>
@@ -49,22 +49,22 @@
       <!-- ./col -->
       <div class="col-lg-3 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <div class="image-box">
-
                 <figure><center>
-                    <img src="resources/admin/images/hlo/doc.jpg" height="85x" width="200px" style="position: center;" alt="">
+
+                  <img src="{{asset('resources/admin/images/doc.jpg')}}" height="75x" width="100px" style="position: center;" alt="">
                 </center> </figure>
-            </div>
+            </div> 
           </div>
 
-         <b>Our total doctors..</b>
+          <b>Our total doctors..</b>
         </div>
       </div>
       <div class="col-lg-7 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <h3>{{$totalDoctor}}</h3>
 
@@ -80,14 +80,14 @@
 
       <div class="col-lg-3 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <div class="image-box">
-
                 <figure><center>
-                    <img src="resources/admin/images/hlo/xyz.png" height="85x" width="200px" style="position: center;" alt="">
+
+                  <img src="{{asset('resources/admin/images/patient.png')}}" height="75x" width="100px" style="position: center;" alt="">
                 </center> </figure>
-            </div>
+            </div> 
           </div>
 
          <b>Our total patients..</b>
@@ -95,7 +95,7 @@
       </div>
       <div class="col-lg-7 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <h3>{{$totalPatient}}</h3>
 
@@ -110,13 +110,13 @@
 
       <div class="col-lg-3 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <div class="image-box">
+              <figure><center>
 
-                <figure><center>
-                    <img src="resources/admin/images/hlo/doc.jpg" height="85x" width="200px" style="position: center;" alt="">
-                </center> </figure>
+                <img src="{{asset('resources/admin/images/xyz.png')}}" height="75x" width="100px" style="position: center;" alt="">
+              </center> </figure>
             </div>
           </div>
 
@@ -125,7 +125,7 @@
       </div>
       <div class="col-lg-7 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <h3>{{$totalService}}</h3>
 
@@ -140,13 +140,14 @@
 
       <div class="col-lg-3 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <div class="image-box">
 
-                <figure><center>
-                    <img src="resources/admin/images/hlo/stf.png" height="85x" width="200px" style="position: center;" alt="">
-                </center> </figure>
+              <figure><center>
+
+                <img src="{{asset('resources/admin/images/stf.png')}}" height="75x" width="100px" style="position: center;" alt="">
+              </center> </figure>
             </div>
           </div>
 
@@ -155,7 +156,7 @@
       </div>
       <div class="col-lg-7 col-xs-10">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-green">
           <div class="inner">
             <h3>{{$totalStaff}}</h3>
 

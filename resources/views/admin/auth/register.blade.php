@@ -60,9 +60,8 @@
         <div class="col-xs-4">
           <button type="submit" class="btn btn-success btn-block btn-flat">Register</button>
         </div>
-
-        <div class="col-xs-3" buttontype="button">
-          <a class="btn btn-success" href="{{route('auth.login')}}" style="color:white;" class="text-center" class="btn btn-success btn-block btn-flat">Login </a>
+        <div>
+           <span>Already have account? </span><a href="{{route('auth.login')}}" style="color:rgb(74, 111, 225);" class="text-center">Login </a>
         </div>
 
         <!-- /.col -->

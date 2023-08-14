@@ -12,7 +12,7 @@
       <!-- left column -->
       <div class="col-md-12">
         <!-- general form elements -->
-        <div class="box box-primary" style="background-color:#a5c9d1;">
+        <div class="box box-success" style="background-color:#a2cd75;">
           <div class="box-header with-border">
             <h3 class="box-title">Services</h3>
           </div>
@@ -32,8 +32,8 @@
                 <label for="exampleInputEmail1">Image</label>
                 <input type="file" class="form-control" id="exampleInputEmail1" name="image" >
               </div>
-              <div class="box-footer" style="background-color:rgb(140, 173, 196)">
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="box-footer" style="background-color:#a2cd75">
+                <button type="submit" class="btn btn-success">Submit</button>
               </div>
               {{csrf_field()}}
             </form>
